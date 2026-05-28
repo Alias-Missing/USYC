@@ -15,4 +15,4 @@ This is a CLI tool, meaning it runs directly in the terminal.
 
 This uses a Scanner for input and a Switch case on a (int) variable to facilitate a menu, and is wrapped in a do-while loop with a confirmation message.
 
-The Monophonic version currently doesn't work. ~~I'll get~~ I got on that.
+The Monophonic version currently ~~doesn't~~ does work. ~~I'll get~~ I got on that.
