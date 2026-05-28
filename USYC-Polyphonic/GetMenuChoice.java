@@ -17,8 +17,6 @@ public class GetMenuChoice
     while (opt<1||opt>17);
     return opt;
 }
-    public class GetMenuChoice_FMA 
-{
     public static int GetMenuOpt_FMA(Scanner kybrd)
 {
     int opt;
@@ -48,6 +46,5 @@ public class GetMenuChoice
     }
     while (opt<1||opt>6);
     return opt;
-}
 }
 }
