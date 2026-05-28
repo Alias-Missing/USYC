@@ -126,7 +126,7 @@ public class App {
         case 16:
         {
             PrintMenu.PrintMenu_FMA();
-            choice = GetMenuChoice_FMA.GetMenuOpt_FMA(kybrd);
+            choice = GetMenuChoice.GetMenuOpt_FMA(kybrd);
             switch(choice)
             {
                 case 1:
@@ -150,7 +150,7 @@ public class App {
         case 17:
         {
             PrintMenu.PrintMenu_GASLAW();
-            choice = GetMenuChoice_GASLAW.GetMenuOpt_GASLAW(kybrd);
+            choice = GetMenuChoice.GetMenuOpt_GASLAW(kybrd);
             switch (choice)
             {
                 case 1:
