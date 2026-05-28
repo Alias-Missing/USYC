@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception
 {
-    String Confirm=" ";
+    String Confirm;
     double distance, area_circle, area_triangle, area_quadril, angle_sum, mole, atom, gram, Celsius, Fahrenheit;
     Scanner kybrd=new Scanner(System.in);
     do
@@ -125,7 +125,7 @@ public class App {
         break;
         case 16:
         {
-            PrintMenu_FMA.PrintMen_FMA();
+            PrintMenu.PrintMenu_FMA();
             choice = GetMenuChoice_FMA.GetMenuOpt_FMA(kybrd);
             switch(choice)
             {
@@ -149,7 +149,7 @@ public class App {
         break;
         case 17:
         {
-            PrintMenu_GASLAW.PrintMen_GASLAW();
+            PrintMenu.PrintMenu_GASLAW();
             choice = GetMenuChoice_GASLAW.GetMenuOpt_GASLAW(kybrd);
             switch (choice)
             {
