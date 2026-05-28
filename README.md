@@ -14,3 +14,5 @@ The program itself is comprised of geometry, chemistry, basic conversions, and o
 This is a CLI tool, meaning it runs directly in the terminal.
 
 This uses a Scanner for input and a Switch case on a (int) variable to facilitate a menu, and is wrapped in a do-while loop with a confirmation message.
+
+The Monophonic version currently doesn't work. I'll get on that.
