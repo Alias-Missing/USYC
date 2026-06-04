@@ -8,7 +8,7 @@ public class GramToMolCalc
     System.out.print("Enter amount of element in grams: ");
     gram=kybrd.nextDouble();
     System.out.print("Enter Molar Mass of element: ");
-    molar_mass=kybrd.nextDouble();
+    molar_mass=Periodically.GetMass(kybrd);
     mole=(gram*(1/molar_mass));
     return mole;
 }

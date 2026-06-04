@@ -1,6 +1,7 @@
+import java.util.Scanner;
 public class Periodically {
     static final double MolarMassArray[] = new double[118];
-static    {
+    static {
         MolarMassArray[0]=1.0078; //H
         MolarMassArray[1]=4.0026; //He
         MolarMassArray[2]=6.9410; //Li
@@ -119,5 +120,19 @@ static    {
         MolarMassArray[115]=293.00;
         MolarMassArray[116]=294.00;
         MolarMassArray[117]=294.00;
-        }
+            }
+    public static double GetMass(Scanner kybrd)
+    {
+        int atomnum;
+        do
+        {
+            System.out.print("Enter the atomic number of the element you want, 1-118: ");
+            atomnum= kybrd.nextInt();
+            if (atomnum<1||atomnum>118)
+            {
+                System.out.println("Invalid Atomic Number");
+            }
+        } while(atomnum<1||atomnum>118);
+        return MolarMassArray[atomnum-1];
+    }
 }
