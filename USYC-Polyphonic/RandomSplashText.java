@@ -9,7 +9,7 @@ public class RandomSplashText
     LocalDate today= LocalDate.now();
     MonthDay now = MonthDay.from(today);
     MonthDay crimas= MonthDay.of(Month.DECEMBER, 25);
-    int SpalshText=(int)(Math.random()*23)+1;
+    int SpalshText=(int)(Math.random()*24)+1;
     switch (SpalshText)
     {
     case 1:
@@ -146,6 +146,10 @@ public class RandomSplashText
             System.out.println("You wanna guess how much time PgUp and PgDwn save scrolling through this thing?");
         }
         break;
+        case 24:
+        {
+            System.out.println("Now runs on Git!");
+        }
     }
     if (now.equals(crimas))
     {
