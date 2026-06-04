@@ -28,7 +28,7 @@ public class PrintMenu
     System.out.println("16. Force, Mass, and Acceleration");
     System.out.println("17. Gas Laws");
     System.out.println("Planned Updates: Uhhhhh");
-    System.out.println("Latest Update: More spalsh techs, Consistent Code Alignment, Multi-File Reconfig, 'Periodically' library/array/thing created");
+    System.out.println("Latest Update: More spalsh techs, Consistent Code Alignment, Multi-File Reconfig, 'Periodically' Lookup Table added to main");
     RandomSplashText.RandomSpalshText();
     System.out.println("Today is: " + LocalDate.now());
 }
