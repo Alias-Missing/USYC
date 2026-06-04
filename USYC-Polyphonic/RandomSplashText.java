@@ -9,7 +9,7 @@ public class RandomSplashText
     LocalDate today= LocalDate.now();
     MonthDay now = MonthDay.from(today);
     MonthDay crimas= MonthDay.of(Month.DECEMBER, 25);
-    int SpalshText=(int)(Math.random()*24)+1;
+    int SpalshText=(int)(Math.random()*25)+1;
     switch (SpalshText)
     {
     case 1:
@@ -54,56 +54,55 @@ public class RandomSplashText
             System.out.println("DIE!");
             System.out.println("JUDGEMENT!");
         }
-        break;
-        case 8:
+    break;
+    case 8:
         {
             System.out.println("Will anyone read this? Probably not.");
         }
-        break;
-
-        case 9:
+    break;
+    case 9:
         {    
             System.out.println("YOMI HUSTLE!");
         }
-       break;
-        case 10:
+    break;
+    case 10:
         {    
             System.out.println("This is (no longer) longer than main lmfao. Fact-Checked by: The Fucking Calculator That Came On The Fucking Laptop (TM)");
         }
-        break;
-        case 11:
+    break;
+    case 11:
         {
             System.out.println("Don't look at bbbbb.java, it's THE MONOLITH (TM)");
         }
-        break;
-        case 12:
+    break;
+    case 12:
         {
             System.out.println("bbbbb 325 lines? Nah.");
             System.out.println("aaaaa *730 lines? Yea.");
         }
-        break;
-        case 13:
+    break;
+    case 13:
         {
             System.out.println("Stand proud, bbbbb.java, you were strong.");
         }
-        break;
-        case 14:
+    break;
+    case 14:
         {
             System.out.println("Nah, I'd aaaaa.java");
         }
-        break;
-        case 15:
+    break;
+    case 15:
         {
             System.out.println("Hours spent making main menu: 0.00003");
             System.out.println("Hours spent making these splash texts: 333333.333333");
         }
-        break;
-        case 16:
+    break;
+    case 16:
         {
             System.out.println("Still smaller than the Oregon Trail! 23 KB<3500 km");
         }
-        break;
-        case 17:
+    break;
+    case 17:
         {
             System.out.println("Geforce RTX 5060");
             System.out.println("B860M D3HP");
@@ -113,44 +112,50 @@ public class RandomSplashText
             System.out.println("MSI PSU");
             System.out.println("Dev Specs");
         }
-        break;
-        case 18:
+    break;
+    case 18:
         {
             System.out.println("I am going to ULTRAKILL you!!");
         }
-        break;
-        case 19:
+    break;
+    case 19:
         {
             System.out.println("Guest");
             System.out.println("Visit");
         }
-        break;
-        case 20:
+    break;
+    case 20:
         {
             System.out.println("Also try Bet Break!");
             System.out.println("(Note: Bet Break is not availible to the public yet, and, so, you cannot, in fact, try Bet Break.)");
         }
-        break;
-        case 21:
+    break;
+    case 21:
         {
             System.out.println("Also see: LinuxGuide! (I think I accidentally wiped it off my computer from installing ArchLinux...)");
         }
-        break;
-        case 22:
+    break;
+    case 22:
         {
             System.out.println("If any potential employer sees this, I hope you're prepared for my only capability: massive CLI projects. :D");
         }
-        break;
-        case 23:
+    break;
+    case 23:
         {
             System.out.println("You wanna guess how much time PgUp and PgDwn save scrolling through this thing?");
         }
-        break;
-        case 24:
+    break;
+    case 24:
         {
             System.out.println("Now runs on Git!");
         }
-    }
+    case 25:
+        {
+            System.out.println("No me gusta pescado,");
+            System.out.println("Pero, me gusta otros mariscos.");
+            System.out.println("No conozco porque,");
+            System.out.println("pero, no me gusta pescado");
+        }
     if (now.equals(crimas))
     {
         System.out.println("crimas :3");
