@@ -21,3 +21,6 @@ The Monophonic version currently ~~doesn't~~ **does** work. ~~I'll get~~ **I got
 - Consolidated classes:
      - GetMenuChoice
      - PrintMenu
+- Added the 'Periodically' lookup table in the Polyphonic version of USYC
+     - This is a molar-mass lookup table
+     - This replaces most of the 'Please enter the molar mass' prompts, except in the stoichiometry section 
