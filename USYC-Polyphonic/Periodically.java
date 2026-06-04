@@ -130,7 +130,7 @@ public class Periodically {
             atomnum= kybrd.nextInt();
             if (atomnum<1||atomnum>118)
             {
-                System.out.println("Invalid Atomic Number");
+                System.out.println("Invalid Atomic Number as of 2026-June-04");
             }
         } while(atomnum<1||atomnum>118);
         return MolarMassArray[atomnum-1];
