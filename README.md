@@ -23,4 +23,7 @@ The Monophonic version currently ~~doesn't~~ **does** work. ~~I'll get~~ **I got
      - PrintMenu
 - Added the 'Periodically' lookup table in the Polyphonic version of USYC
      - This is a molar-mass lookup table
-     - This replaces most of the 'Please enter the molar mass' prompts, except in the stoichiometry section 
+     - This replaces most of the 'Please enter the molar mass' prompts, ~~except in the stoichiometry section~~ with a 'Please enter the atomic number of an element' prompt
+- Added the 'Compound' Object in the Polyphonic version of USYC
+    - This uses the Periodically lookup table to calculate molar mass
+    - This replaces the 'Please enter the molar mass' prompts with a 'please enter the atomic number of element x' prompt
