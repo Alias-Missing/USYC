@@ -84,17 +84,23 @@ public class App {
         break;
         case 13:
         {
+            double MolarMass=Periodically.GetMass(kybrd);
+            System.out.println("Molar Mass of Element: "+MolarMass);
+        }
+        break;
+        case 14:
+        {
             Celsius=FtoCcalc.FtoC(kybrd);
             System.out.println("Temp. in Celsius: " + Celsius);
         }
         break;
-        case 14:
+        case 15:
         {
             Fahrenheit = CtoFCalc.CtoF(kybrd);
             System.out.println("Temp. in Fahrenheit: " + Fahrenheit);
         }
         break;
-        case 15:
+        case 16:
         {
             String[] user_expected={"Guest", "DIRECTIVE", "DEV"};
             String[] pass_expected={"Visit", "PERM.THETA.01", "LIST"};
@@ -123,7 +129,7 @@ public class App {
             }  
         }
         break;
-        case 16:
+        case 17:
         {
             PrintMenu.PrintMenu_FMA();
             choice = GetMenuChoice.GetMenuOpt_FMA(kybrd);
@@ -147,7 +153,7 @@ public class App {
             }
         }
         break;
-        case 17:
+        case 18:
         {
             PrintMenu.PrintMenu_GASLAW();
             choice = GetMenuChoice.GetMenuOpt_GASLAW(kybrd);
