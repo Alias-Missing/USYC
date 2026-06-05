@@ -1,7 +1,9 @@
+import java.util.Scanner;
 public class Compound
 {
     //Vars.
-    double[] ShareArray= Periodically.MolarMassArray;
+    static Scanner kybrd=new Scanner(System.in);
+    static double[] ShareArray= Periodically.MolarMassArray;
     private int Element1;
     private int Element2;
     private int Element3;
@@ -39,12 +41,17 @@ public class Compound
         return this.Element3;
     }
     //Facil.
-    public double GetMolarMassofCompound()
+    public static double GetMolarMassofCompound()
     {
-        double TotalMass=0.0;
-        TotalMass += ShareArray[this.Element1-1];
-        TotalMass += ShareArray[this.Element2-1];
-        TotalMass += ShareArray[this.Element3-1];
+        double TotalMass, BlankMM1, BlankMM2, BlankMM3;
+        System.out.print("Please enter the first element's atomic number, type '120' for blank: ");
+        int e1=kybrd.nextInt();
+        System.out.print("Please enter the second element's atomic number, type '120' for blank: ");
+        int e2=kybrd.nextInt();
+        System.out.print("Please enter the third element's atomic number, type '120' for blank: ");
+        int e3=kybrd.nextInt();
+        TotalMass= (ShareArray[e1-1]+ShareArray[e2-1]+ShareArray[e3-1]);
+        System.out.println("Molar Mass: "+TotalMass);
         return TotalMass;
     }
 }

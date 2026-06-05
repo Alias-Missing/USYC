@@ -1,8 +1,7 @@
 import java.util.Scanner;
 public class Periodically {
-    static final double MolarMassArray[] = new double[118];
+    static final double MolarMassArray[] = new double[120];
     static {
-        MolarMassArray[-1]=0.00; //BLANK
         MolarMassArray[0]=1.0078; //H
         MolarMassArray[1]=4.0026; //He
         MolarMassArray[2]=6.9410; //Li

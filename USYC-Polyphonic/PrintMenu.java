@@ -40,7 +40,7 @@ public class PrintMenu
     System.out.println("2. Solve for Mass");
     System.out.println("3. Solve for Accleration");
 }
-         public static void PrintMenu_GASLAW()
+    public static void PrintMenu_GASLAW()
 {
     System.out.println("----USYC > PHYSICS > GAS LAWS > ----");
     System.out.println("1. Solve for Pressure 1");
