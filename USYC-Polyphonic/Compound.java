@@ -43,7 +43,7 @@ public class Compound
     //Facil.
     public static double GetMolarMassofCompound()
     {
-        double TotalMass, BlankMM1, BlankMM2, BlankMM3;
+        double TotalMass;
         System.out.print("Please enter the first element's atomic number, type '120' for blank: ");
         int e1=kybrd.nextInt();
         System.out.print("Please enter the second element's atomic number, type '120' for blank: ");

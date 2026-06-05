@@ -12,97 +12,79 @@ public class RandomSplashText
     int SpalshText=(int)(Math.random()*25)+1;
     switch (SpalshText)
     {
-    case 1:
+    case 1 ->
         {
             System.out.println("Nine Sols Characters: *Exists* Me: Would");
         }
-    break;
-    case 2:
+    case 2 ->
         {
         System.out.println("TREACHERY TOMORROW!!");
         }
-    break;
-    case 3:
+    case 3 ->
         {
         System.out.println("I WANT TO BELIEVE.");
         System.out.println("SIZE 2 FISH.");
         }
-
-    break;
-
-    case 4:
+    case 4 ->
         {
         System.out.println("MANKIND IS DEAD");
         System.out.println("BLOOD IS FUEL");
         System.out.println("HELL IS FULL");
         }
-    break;
-    case 5:
+    case 5 ->
         {
             System.out.println("How do people make games out of Java?");
         }
-    break;
-    case 6:
+    case 6 ->
         {
             System.out.println("Man, I need some kind of app development guy on this shit right fucking now!");
         }
-    break;
-    case 7:
+    case 7 ->
         {
             System.out.println("THY END IS NOW!");
             System.out.println("CRUSH!");
             System.out.println("DIE!");
             System.out.println("JUDGEMENT!");
         }
-    break;
-    case 8:
+    case 8 ->
         {
             System.out.println("Will anyone read this? Probably not.");
         }
-    break;
-    case 9:
-        {    
+    case 9 ->
+        {
             System.out.println("YOMI HUSTLE!");
         }
-    break;
-    case 10:
-        {    
+    case 10 ->
+        {
             System.out.println("This is (no longer) longer than main lmfao. Fact-Checked by: The Fucking Calculator That Came On The Fucking Laptop (TM)");
         }
-    break;
-    case 11:
+    case 11 ->
         {
             System.out.println("Don't look at bbbbb.java, it's THE MONOLITH (TM)");
         }
-    break;
-    case 12:
+    case 12 ->
         {
             System.out.println("bbbbb 325 lines? Nah.");
             System.out.println("aaaaa *730 lines? Yea.");
         }
-    break;
-    case 13:
+    case 13 ->
         {
             System.out.println("Stand proud, bbbbb.java, you were strong.");
         }
-    break;
-    case 14:
+    case 14 ->
         {
             System.out.println("Nah, I'd aaaaa.java");
         }
-    break;
-    case 15:
+    case 15 ->
         {
             System.out.println("Hours spent making main menu: 0.00003");
             System.out.println("Hours spent making these splash texts: 333333.333333");
         }
-    break;
-    case 16:
+    case 16 ->
         {
             System.out.println("Still smaller than the Oregon Trail! 23 KB<3500 km");
         }
-    break;
-    case 17:
+    case 17 ->
         {
             System.out.println("Geforce RTX 5060");
             System.out.println("B860M D3HP");
@@ -112,54 +94,47 @@ public class RandomSplashText
             System.out.println("MSI PSU");
             System.out.println("Dev Specs");
         }
-    break;
-    case 18:
+    case 18 ->
         {
             System.out.println("I am going to ULTRAKILL you!!");
         }
-    break;
-    case 19:
+    case 19 ->
         {
             System.out.println("Guest");
             System.out.println("Visit");
         }
-    break;
-    case 20:
+    case 20 ->
         {
             System.out.println("Also try Bet Break!");
             System.out.println("(Note: Bet Break is not availible to the public yet, and, so, you cannot, in fact, try Bet Break.)");
         }
-    break;
-    case 21:
+    case 21 ->
         {
             System.out.println("Also see: LinuxGuide! (I think I accidentally wiped it off my computer from installing ArchLinux...)");
         }
-    break;
-    case 22:
+    case 22 ->
         {
             System.out.println("If any potential employer sees this, I hope you're prepared for my only capability: massive CLI projects. :D");
         }
-    break;
-    case 23:
+    case 23 ->
         {
             System.out.println("You wanna guess how much time PgUp and PgDwn save scrolling through this thing?");
         }
-    break;
-    case 24:
+    case 24 ->
         {
             System.out.println("Now runs on Git!");
         }
-    case 25:
+    case 25 ->
         {
             System.out.println("No me gusta pescado,");
             System.out.println("Pero, me gusta otros mariscos.");
             System.out.println("No conozco porque,");
             System.out.println("pero, no me gusta pescado");
         }
+    }
     if (now.equals(crimas))
     {
         System.out.println("crimas :3");
-    }           
-}
+    }
 }
 }
