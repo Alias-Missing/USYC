@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class App {
-    public static void main(String[] args) throws Exception
+    public void main(String[] args) throws Exception
 {
     String Confirm;
     double distance, area_circle, area_triangle, area_quadril, angle_sum, mole, atom, gram, Celsius, Fahrenheit;
@@ -194,7 +194,7 @@ public class App {
     }
     System.out.print("Would you like to make another selection? ");
     Confirm=kybrd.next();
-    }  
+    }
     while (!Confirm.equalsIgnoreCase("No")&&!Confirm.equalsIgnoreCase("N"));
 }
 }

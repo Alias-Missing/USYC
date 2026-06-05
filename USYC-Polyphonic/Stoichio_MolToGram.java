@@ -12,8 +12,7 @@ public class Stoichio_MolToGram
     mol_known=kybrd.nextDouble();
     System.out.print("Please enter amount of moles of unknown substance in the chemical equation: ");
     mol_unknown=kybrd.nextDouble();
-    System.out.print("Please calculate and enter the molar mass of the subsance: ");
-    molar_mass=kybrd.nextDouble();
+    molar_mass=Compound.GetMolarMassofCompound();
     gram=mol_given*(mol_known/mol_unknown)*(molar_mass/1);
     return gram;
 }
