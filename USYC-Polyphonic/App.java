@@ -194,7 +194,7 @@ public class App {
     }
     System.out.print("Would you like to make another selection? ");
     Confirm=kybrd.next();
-    }  
+    }
     while (!Confirm.equalsIgnoreCase("No")&&!Confirm.equalsIgnoreCase("N"));
 }
 }

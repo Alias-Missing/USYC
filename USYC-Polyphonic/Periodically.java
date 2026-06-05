@@ -2,6 +2,7 @@ import java.util.Scanner;
 public class Periodically {
     static final double MolarMassArray[] = new double[118];
     static {
+        MolarMassArray[-1]=0.00; //BLANK
         MolarMassArray[0]=1.0078; //H
         MolarMassArray[1]=4.0026; //He
         MolarMassArray[2]=6.9410; //Li
@@ -70,7 +71,7 @@ public class Periodically {
         MolarMassArray[65]=162.50; //Dy
         MolarMassArray[66]=164.93; //Ho
         MolarMassArray[67]=167.26; //Er
-        MolarMassArray[68]=168.93; 
+        MolarMassArray[68]=168.93;
         MolarMassArray[69]=173.04;
         MolarMassArray[70]=174.97;
         MolarMassArray[71]=178.49;
