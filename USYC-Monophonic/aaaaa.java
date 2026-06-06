@@ -546,7 +546,7 @@ public class aaaaa
     System.out.print("Enter amount of element in grams: ");
     gram=kybrd.nextDouble();
     System.out.print("Enter Molar Mass of element: ");
-    molar_mass=kybrd.nextDouble();
+    molar_mass=GetMass(kybrd);
     mole=(gram*(1/molar_mass));
     return mole;
 }
@@ -556,7 +556,7 @@ public class aaaaa
     System.out.print("Enter amount of element in grams: ");
     gram=kybrd.nextDouble();
     System.out.print("Enter Molar Mass of element: ");
-    molar_mass=kybrd.nextDouble();
+    molar_mass=GetMass(kybrd);
     mole=(gram*(1/molar_mass));
     atom= (mole*(6.022*Math.pow(10, 23)/1));
     return atom;
@@ -637,127 +637,96 @@ public class aaaaa
     int choice = GetMenuChoice(kybrd);
     switch(choice)
     {
-        case 1:
-        {
+        case 1 -> {
             AboutUSYC();
             System.out.print("Would you like to make another selection? ");
             Confirm=kybrd.next();
         }
-        break;
-        case 2:
-        {
+        case 2 -> {
             distance=DistanceFormula(kybrd);
             System.out.println("The distance between these two points is: " + distance);
             System.out.print("Would you like to make another selection? ");
             Confirm=kybrd.next();
         }
-        break;
-        case 3:
-        {
+        case 3 -> {
             area_circle= AreaCircle(kybrd);
             System.out.println("The area of this circle is: " + area_circle);
             System.out.print("Would you like to make another selection? ");
             Confirm=kybrd.next();
         }
-        break;
-        case 4:
-        {
+        case 4 -> {
             area_triangle=AreaTri(kybrd);
             System.out.println("The area of this triangle is: " + area_triangle);
             System.out.print("Would you like to make another selection? ");
             Confirm=kybrd.next();
         }
-        break;
-        case 5:
-        {
+        case 5 -> {
             area_quadril=AreaQuad(kybrd);
             System.out.println("The area of this quadrilateral is: " + area_quadril);
             System.out.print("Would you like to make another selection? ");
             Confirm=kybrd.next();
         }
-        break;
-        case 6:
-        {
+        case 6 -> {
             angle_sum= AngleSum(kybrd);
             System.out.println("The angle sum of this polygon is: " + angle_sum);
             System.out.print("Would you like to make another selection? ");
             Confirm=kybrd.next();
         }
-        break;
-        case 7:
-        {
+        case 7 -> {
             mole= GramToMol(kybrd);
             System.out.println("Mol: " + mole);
             System.out.print("Would you like to make another selection? ");
             Confirm=kybrd.next();
         }
-            break;
-        case 8:
-        {
+        case 8 -> {
             atom=GramtoAtom(kybrd);
             System.out.println("Atom: " + atom);
             System.out.print("Would you like to make another selection? ");
             Confirm=kybrd.next();
         }
-        break;
-        case 9:
-        {
+        case 9 -> {
             gram= MolToGram(kybrd);
             System.out.println("Gram: " + gram);
             System.out.print("Would you like to make another selection? ");
             Confirm=kybrd.next();
         }
-        break;
-        case 10:
-        {
+        case 10 -> {
             atom = MolToAtom(kybrd);
             System.out.println("Atom: " + atom);
             System.out.print("Would you like to make another selection? ");
             Confirm=kybrd.next();
         }
-        break;
-        case 11:
-        {
+        case 11 -> {
             mole = Stoichio_MolToMol(kybrd);
             System.out.println("Moles in substance: " + mole);
             System.out.print("Would you like to make another selection? ");
             Confirm=kybrd.next();
         }
-        break;
-        case 12:
-        {
+        case 12 -> {
             gram = Stoichio_MolToGram(kybrd);
             System.out.println("Grams in substance: " + gram);
             System.out.print("Would you like to make another selection? ");
             Confirm=kybrd.next();
         }
-        break;
-        case 13:
-        {
+        case 13 -> {
             molar_mass=GetMass(kybrd);
             System.out.println("Molar Mass: " + molar_mass);
             System.out.print("Would you like to make another selection? ");
             Confirm=kybrd.next();
         }
-        break;
-        case 14:
-        {
+        case 14 -> {
             Celsius=FtoC(kybrd);
             System.out.println("Temp. in Celsius: " + Celsius);
             System.out.print("Would you like to make another selection? ");
             Confirm=kybrd.next();
         }
-        break;
-        case 15:
-        {
+        case 15 -> {
             Fahrenheit = CtoF(kybrd);
             System.out.println("Temp. in Fahrenheit: " + Fahrenheit);
             System.out.print("Would you like to make another selection? ");
             Confirm=kybrd.next();
         }
-        break;
-        case 16:
-        {
+        case 16 -> {
             String[] user_expected={"Guest", "DIRECTIVE", "DEV"};
             String[] pass_expected={"Visit", "PERM.THETA.01", "LIST"};
             String User, Pass;
@@ -786,9 +755,7 @@ public class aaaaa
                     Confirm=kybrd.next();
             }  
         }
-        break;
-                    case 17:
-                        {
+                    case 17 -> {
                             PrintMenu_FMA();
                             choice = GetMenuChoice_FMA(kybrd);
                             switch(choice)
@@ -810,9 +777,7 @@ public class aaaaa
                                     }
                             }
                         }
-                    break;
-                    case 18:
-                        {
+                    case 18 -> {
                             PrintMenu_GASLAW();
 
                             choice = GetMenuChoice_GASLAW(kybrd);
