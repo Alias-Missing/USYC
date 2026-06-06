@@ -731,6 +731,7 @@ public class aaaaa
             System.out.print("Would you like to make another selection? ");
             Confirm=kybrd.next();
         }
+        break;
         case 13:
         {
             molar_mass=GetMass(kybrd);
