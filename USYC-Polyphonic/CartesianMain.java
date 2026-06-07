@@ -67,7 +67,13 @@ public class CartesianMain
                     for (int col=10; col>=0; col--)
                     {
                         arr[col][0]=col;
-                    }
+                    } 
+                    a1=SetPoint.A.GetX();
+                    b1=SetPoint.B.GetX();
+                    c1=SetPoint.C.GetX();
+                    a2=SetPoint.A.GetY();
+                    b2=SetPoint.B.GetY();
+                    c2=SetPoint.C.GetY();
                     arr[a2][a1]=1;
                     arr[b2][b1]=2;
                     arr[c2][c1]=3;
