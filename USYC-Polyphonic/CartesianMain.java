@@ -32,6 +32,15 @@ public class CartesianMain
         Scanner kybrd= new Scanner(System.in);
         int opt=0;
         int[][] arr=new int[11][11];
+        int a1=SetPoint.A.GetX();
+        int b1=SetPoint.B.GetX();
+        int c1=SetPoint.C.GetX();
+        int a2=SetPoint.A.GetY();
+        int b2=SetPoint.B.GetY();
+        int c2=SetPoint.C.GetY();
+        arr[a2][a1]=1;
+        arr[b2][b1]=2;
+        arr[c2][c1]=3;
         do
         {
             PrintMenu();
@@ -44,15 +53,6 @@ public class CartesianMain
                 }
                 case 2 ->
                 {
-                    int a1=SetPoint.A.GetX();
-                    int b1=SetPoint.B.GetX();
-                    int c1=SetPoint.C.GetX();
-                    int a2=SetPoint.A.GetY();
-                    int b2=SetPoint.B.GetY();
-                    int c2=SetPoint.C.GetY();
-                    arr[a2][a1]=1;
-                    arr[b2][b1]=2;
-                    arr[c2][c1]=3;
                     arr=new int[11][11];
                     for (int row=10; row >=0; row--)
                     {
@@ -60,8 +60,11 @@ public class CartesianMain
                     }
                     for (int col=10; col>=0; col--)
                     {
-                        arr[col][0]=10-col;
+                        arr[col][0]=col;
                     }
+                    arr[a2][a1]=1;
+                    arr[b2][b1]=2;
+                    arr[c2][c1]=3;
                     CartesianPrintGraph.PrintGraph(arr);
                 }
                 case 3 ->
@@ -108,12 +111,12 @@ public class CartesianMain
                 }
                 case 6 ->
                 {
-                    int a1=SetPoint.A.GetX();
-                    int b1=SetPoint.B.GetX();
-                    int c1=SetPoint.C.GetX();
-                    int a2=SetPoint.A.GetY();
-                    int b2=SetPoint.B.GetY();
-                    int c2=SetPoint.C.GetY();
+                    a1=SetPoint.A.GetX();
+                    b1=SetPoint.B.GetX();
+                    c1=SetPoint.C.GetX();
+                    a2=SetPoint.A.GetY();
+                    b2=SetPoint.B.GetY();
+                    c2=SetPoint.C.GetY();
                     System.out.print("Enter a coordinate to delete, 1, 2, or 3: ");
                 do  {
                         opt = kybrd.nextInt();
