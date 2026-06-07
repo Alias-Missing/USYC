@@ -40,52 +40,56 @@ public class App {
             angle_sum= AngleSumInterior.AngleSum(kybrd);
             System.out.println("The angle sum of this polygon is: " + angle_sum);
         }
-        case 7 -> 
+        case 7 ->
+        {
+            CartesianMain.main(args);
+        }
+        case 8 -> 
         {
             mole= GramToMolCalc.GramToMol(kybrd);
             System.out.println("Mol: " + mole);
         }
-        case 8 -> 
+        case 9 -> 
         {
             atom=GramToAtomCalc.GramtoAtom(kybrd);
             System.out.println("Atom: " + atom);
         }
-        case 9 -> 
+        case 10 -> 
         {
             gram= MolToGramCalc.MolToGram(kybrd);
             System.out.println("Gram: " + gram);
         }
-        case 10 -> 
+        case 11 -> 
         {
             atom = MolToAtomCalc.MolToAtom(kybrd);
             System.out.println("Atom: " + atom);
         }
-        case 11 -> 
+        case 12 -> 
         {
             mole = Stiochio_MolToMolCalc.Stoichio_MolToMol(kybrd);
             System.out.println("Moles in substance: " + mole);
         }
-        case 12 -> 
+        case 13 -> 
         {
             gram = Stoichio_MolToGram.Stoichio_MolToGramCalc(kybrd);
             System.out.println("Grams in substance: " + gram);
         }
-        case 13 -> 
+        case 14 -> 
         {
             double MolarMass=Periodically.GetMass(kybrd);
             System.out.println("Molar Mass of Element: "+MolarMass);
         }
-        case 14 -> 
+        case 15 -> 
         {
             Celsius=FtoCcalc.FtoC(kybrd);
             System.out.println("Temp. in Celsius: " + Celsius);
         }
-        case 15 -> 
+        case 16 -> 
         {
             Fahrenheit = CtoFCalc.CtoF(kybrd);
             System.out.println("Temp. in Fahrenheit: " + Fahrenheit);
         }
-        case 16 -> 
+        case 17 -> 
         {
             String[] user_expected={"Guest", "DIRECTIVE", "DEV"};
             String[] pass_expected={"Visit", "PERM.THETA.01", "LIST"};
@@ -113,7 +117,7 @@ public class App {
                     }
             }  
         }
-        case 17 -> 
+        case 18 -> 
         {
             PrintMenu.PrintMenu_FMA();
             choice = GetMenuChoice.GetMenuOpt_FMA(kybrd);
@@ -133,7 +137,7 @@ public class App {
                 }
             }
         }
-        case 18 -> 
+        case 19 -> 
         {
             PrintMenu.PrintMenu_GASLAW();
             choice = GetMenuChoice.GetMenuOpt_GASLAW(kybrd);
