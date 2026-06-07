@@ -48,7 +48,7 @@ public class CartesianMain
             {
                 case 1 ->
                 {
-                    SetPoint.SetupPoint();
+                    SetPoint.SetupPoint(kybrd);
                 }
                 case 2 ->
                 {

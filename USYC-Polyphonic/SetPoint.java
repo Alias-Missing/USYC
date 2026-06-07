@@ -4,9 +4,8 @@ public class SetPoint
     static Point A= new Point(0, 0);
     static Point B= new Point(0, 0);
     static Point C= new Point(0, 0);
-    public static void SetupPoint()
+    public static void SetupPoint(Scanner kybrd)
     {
-        Scanner kybrd=new Scanner(System.in);
         System.out.print("Please enter the first point's X value: ");
         int x= kybrd.nextInt();
         A.SetX(x);
