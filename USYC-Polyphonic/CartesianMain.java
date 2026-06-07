@@ -32,14 +32,6 @@ public class CartesianMain
         Scanner kybrd= new Scanner(System.in);
         int opt=0;
         int[][] arr=new int[11][11];
-        for (int row=10; row >=0; row--)
-        {
-            arr[0][row]=row;
-        }
-        for (int col=10; col>=0; col--)
-        {
-            arr[col][0]=col;
-        }
         do
         {
             PrintMenu();
@@ -58,9 +50,18 @@ public class CartesianMain
                     int a2=SetPoint.A.GetY();
                     int b2=SetPoint.B.GetY();
                     int c2=SetPoint.C.GetY();
-                    arr[a1][a2]=1;
-                    arr[b1][b2]=2;
-                    arr[c1][c2]=3;
+                    arr[a2][a1]=1;
+                    arr[b2][b1]=2;
+                    arr[c2][c1]=3;
+                    arr=new int[11][11];
+                    for (int row=10; row >=0; row--)
+                    {
+                        arr[0][row]=row;
+                    }
+                    for (int col=10; col>=0; col--)
+                    {
+                        arr[col][0]=10-col;
+                    }
                     CartesianPrintGraph.PrintGraph(arr);
                 }
                 case 3 ->
