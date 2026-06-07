@@ -31,7 +31,13 @@ public class CartesianMain
     {
         Scanner kybrd= new Scanner(System.in);
         int opt=0;
-        int[][] arr=new int[11][11];
+        int[][] arr=new int[12][12];
+        SetPoint.A.SetX(0);
+        SetPoint.A.SetY(11);
+        SetPoint.B.SetX(0);
+        SetPoint.B.SetY(11);
+        SetPoint.C.SetX(0);
+        SetPoint.C.SetY(11);
         int a1=SetPoint.A.GetX();
         int b1=SetPoint.B.GetX();
         int c1=SetPoint.C.GetX();
@@ -53,7 +59,7 @@ public class CartesianMain
                 }
                 case 2 ->
                 {
-                    arr=new int[11][11];
+                    arr=new int[12][12];
                     for (int row=10; row >=0; row--)
                     {
                         arr[0][row]=row;
@@ -128,7 +134,7 @@ public class CartesianMain
                         {
                             arr[a1][a2]=0;
                             SetPoint.A.SetX(0);
-                            SetPoint.A.SetY(0);
+                            SetPoint.A.SetY(11);
                             a1=SetPoint.A.GetX();
                             a2=SetPoint.A.GetY();
                             arr[a1][a2]=0;
@@ -138,7 +144,7 @@ public class CartesianMain
                         {
                             arr[b1][b2]=0;
                             SetPoint.B.SetX(0);
-                            SetPoint.B.SetY(0);
+                            SetPoint.B.SetY(11);
                             b1=SetPoint.B.GetX();
                             b2=SetPoint.B.GetY();
                             arr[b1][b2]=0;
@@ -148,10 +154,9 @@ public class CartesianMain
                         {
                             arr[c1][c2]=0;
                             SetPoint.C.SetX(0);
-                            SetPoint.C.SetY(0);
+                            SetPoint.C.SetY(11);
                             c1=SetPoint.C.GetX();
                             c2=SetPoint.C.GetY();
-                            arr[c1][c2]=0;
                             System.out.println("Point Deleted.");
                         }
                     } while (opt<1||opt>3);
