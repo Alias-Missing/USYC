@@ -100,20 +100,32 @@ public class App {
             {
                 System.out.print("Please enter Password: ");
                 Pass=kybrd.next();
-                if (Pass.equals(pass_expected[0]))
+                if (User.equalsIgnoreCase(user_expected[0])&&Pass.equals(pass_expected[0]))
                     {
                         System.out.println("You thought there was something here, like last time? Go fuck off lmao");
                     }
-                    else if (Pass.equals(pass_expected[1]))
+                else if (User.equalsIgnoreCase(user_expected[0])&&!Pass.equals(pass_expected[0]))
+                    {
+                        System.out.println("Incorrrect Password!");
+                    }
+                else if (User.equalsIgnoreCase(user_expected[1])&&Pass.equals(pass_expected[1]))
                     {
                         System.out.println("I. MULTIPLY");
                         System.out.println("II. DOMINATE");
                         System.out.println("III. DESTROY");
                     }
-                    else if (Pass.equals(pass_expected[2]))
+                else if (User.equalsIgnoreCase(user_expected[1])&&!Pass.equals(pass_expected[1]))
+                    {
+                        System.out.println("Incorrrect Password!");
+                    }
+                else if (User.equalsIgnoreCase(user_expected[2])&&Pass.equals(pass_expected[2]))
                     {
                     System.out.println("I. Make more duplicate vars (eg. pass_expected1. pass_expected2, etc.) into arrays");
                     System.out.println("II. Minimize line count (DONE)");
+                    }
+                else if (User.equalsIgnoreCase(user_expected[2])&&!Pass.equals(pass_expected[2]))
+                    {
+                        System.out.println("Incorrrect Password!");
                     }
             }  
         }
