@@ -20,6 +20,18 @@ This is a CLI tool, meaning it runs directly in the terminal.
 
 This uses a Scanner for input and a Switch case on a (int) variable to facilitate a menu, and is wrapped in a do-while loop with a confirmation message.
 
+***Compiling and Running the Project***
+
+uses JDK 25, and rule switches
+
+- Clone the repo
+  - run 'git clone https://github.com/Alias-Missing/USYC'
+- Compile the project
+  - cd into either of the versions
+  - run 'javac *.java'
+  - run 'java  App.java' on Polyphonic version
+    - run 'java aaaaa.java' on Monophonic version
+
 ***CHANGELOG***
 - Consolidated classes:
      - GetMenuChoice
@@ -30,4 +42,3 @@ This uses a Scanner for input and a Switch case on a (int) variable to facilitat
 - Added the 'Compound' Object in the Polyphonic version of USYC
     - This uses the Periodically lookup table to calculate molar mass
     - This replaces the 'Please enter the molar mass' prompts with a 'please enter the atomic number of element x' prompt
-  
