@@ -102,7 +102,7 @@ public class App {
                 Pass=kybrd.next();
                 if (User.equalsIgnoreCase(user_expected[0])&&Pass.equals(pass_expected[0]))
                     {
-                        System.out.println("You thought there was something here, like last time? Go fuck off lmao");
+                        System.out.println("Hello, Visitor. Generic Text String Here.");
                     }
                 else if (User.equalsIgnoreCase(user_expected[0])&&!Pass.equals(pass_expected[0]))
                     {
@@ -157,27 +157,27 @@ public class App {
             {
                 case 1 -> 
                 {
-                    SolveForPressure1.SolveForP1(kybrd);
+                    SolveForPressure.SolveForP1(kybrd);
                 }
                 case 2 -> 
                 {
-                    SolveForPressure2.SolveForP2(kybrd);
+                    SolveForPressure.SolveForP2(kybrd);
                 }
                 case 3 -> 
                 {
-                    SolveForVol1.SolveForV1(kybrd);
+                    SolveForVol.SolveForV1(kybrd);
                 }
                 case 4 -> 
                 {
-                    SolveForVol2.SolveForV2(kybrd);
+                    SolveForVol.SolveForV2(kybrd);
                 }
                 case 5 -> 
                 {
-                    SolveForTemp1.SolveForT1(kybrd);
+                    SolveForTemp.SolveForT1(kybrd);
                 }
                 case 6 -> 
                 {
-                    SolveForTemp2.SolveForT2(kybrd);
+                    SolveForTemp.SolveForT2(kybrd);
                 }
             }
         }

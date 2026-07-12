@@ -9,12 +9,12 @@ public class GetMenuChoice
     {
         System.out.print("Please enter a menu option: ");
         opt= kybrd.nextInt();
-        if (opt>17||opt<1)
+        if (opt>19||opt<1)
         {
             System.out.println("Error: Invalid Menu option: Please try again!");    
         }
     }
-    while (opt<1||opt>17);
+    while (opt<1||opt>19);
     return opt;
 }
     public static int GetMenuOpt_FMA(Scanner kybrd)
