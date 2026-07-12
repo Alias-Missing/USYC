@@ -118,7 +118,7 @@ public class CartesianMain
                 }
                 case 5 ->
                 {
-                    double reutrn=CartesianDistance.DistanceFormulaCalc(kybrd);
+                    double reutrn=DistanceFormula.DistanceFormulaCalc(kybrd);
                     System.out.println("Distance: "+reutrn);
                 }
                 case 6 ->
